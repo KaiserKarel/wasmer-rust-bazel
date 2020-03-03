@@ -1,0 +1,7 @@
+diff -r vendor/typenum-1.11.2/src/lib.rs patch/typenum-1.11.2/code/src/lib.rs
+65,66c65,66
+< include!(env!("TYPENUM_BUILD_OP"));
+< include!(env!("TYPENUM_BUILD_CONSTS"));
+---
+> include!(concat!(env!("OUT_DIR"), "/consts.rs"));
+> include!(concat!(env!("OUT_DIR"), "/op.rs"));
