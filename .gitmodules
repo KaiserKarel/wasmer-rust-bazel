@@ -1,0 +1,3 @@
+[submodule "wasmer-rust-example"]
+	path = wasmer-rust-example
+	url = https://github.com/wasmerio/wasmer-rust-example
